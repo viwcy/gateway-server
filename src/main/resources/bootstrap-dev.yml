@@ -1,0 +1,19 @@
+server:
+  port: 12000
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        encode: UTF-8
+        namespace: bceed9fd-3e36-401f-ba30-23248bb62673
+        group: ${spring.application.name}
+      discovery:
+        server-addr: 127.0.0.1:8848
+        # 指定对应的注册空间，服务隔离
+#        namespace: aeb2e602-5f5f-43ba-a56b-f11fd6784138

@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: gateway-server
+
+jwt:
+  base64Secret: MzFjYWEwMTY4ZDNkNDU2Y2EwZjZiMDU5NTIxMjJmZGI=
+  passUrls: /user-server/user/register,/user-server/user/login
